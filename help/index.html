@@ -17,69 +17,133 @@
 </head>
 
 <body>
-  <h1>Help</h1>
-
-  <h3><i class="bi bi-question-circle-fill"></i> Getting Started with Amazon Web Services (AWS)</h3>
-
-  <div>
-    <p><strong>How can I get started with the solution architecture of a cloud-native application in AWS?</strong></p>
-    <p>Getting started with the solution architecture of a cloud-native application on AWS requires a fundamental shift
-      in perspective, moving away from managing static infrastructure toward a philosophy that prioritizes managed
-      services and APIs. This process begins with establishing clear leadership and accountability by designating a
-      single leader for the initiative and forming a cross-functional "two-pizza" team—comprised of developers,
-      operations, and security experts—to define the project's standards. Before any technical implementation, it is
-      vital to establish core architectural tenets, such as a "serverless first" approach, and to categorize the
-      specific workload—whether it be a web app, data platform, or event-driven service—to ensure the selected services
-      align with the application's goals. The actual design phase should be guided by the AWS Well-Architected
-      Framework, which ensures the solution is built upon the six critical pillars of Operational Excellence, Security,
-      Reliability, Performance Efficiency, Cost Optimization, and Sustainability. Architects must then select a compute
-      strategy, often choosing between the high agility of AWS Lambda for serverless workflows or the control provided
-      by Amazon EKS for containerized microservices. This is coupled with the use of purpose-built databases, such as
-      Amazon DynamoDB for key-value storage or Amazon Aurora for relational needs, to avoid the limitations of
-      traditional monolithic databases. Finally, the entire environment should be automated using Infrastructure as Code
-      (IaC) with tools like the AWS CDK, secured with a strong identity foundation via AWS IAM, and validated through
-      the deployment of a meaningful but non-critical pilot workload in production.</p>
-    <ol>
-      <li>Adopt a Cloud-Native Mindset</li>
-      <li>Empower a Single-Threaded Leader</li>
-      <li>Create a Cross-Functional Cloud Team</li>
-      <li>Establish Your Architectural Tenets</li>
-      <li>Determine Your Workload Type</li>
-      <li>Design Using the AWS Well-Architected Framework</li>
-      <li>Select Your Core Compute Service</li>
-      <li>Use Purpose-Built Databases</li>
-      <li>Implement Infrastructure as Code (IaC)</li>
-      <li>Design for Security and Compliance</li>
-      <li>Design for Security and Compliance</li>
-    </ol>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html" id="navHomeButton" role="button">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navServicesButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+            <ul class="dropdown-menu" aria-labelledby="navServicesDropdownMenu">
+              <li><a class="dropdown-item" href="#">Amazon Elastic Compute Cloud (EC2)</a></li>
+              <li><a class="dropdown-item" href="#">Amazon Elastic Container Service (ECS)</a></li>
+              <li><a class="dropdown-item" href="#">AWS Lambda</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Amazon Aurora</a></li>
+              <li><a class="dropdown-item" href="#">Amazon ElastiCache</a></li>
+              <li><hr class="dropdown-divider"></li>              
+              <li><a class="dropdown-item" href="#">AWS Application Load Balancer (ALB)</a></li>
+              <li><hr class="dropdown-divider"></li>              
+              <li><a class="dropdown-item" href="#">AWS Transit Gateway</a></li>
+              <li><hr class="dropdown-divider"></li>              
+              <li><a class="dropdown-item" href="#">Amazon Simple Storage Service (S3)</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../documents/index.html" id="navDocumentsButton" role="button">Documents</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact/index.html" id="navContactButton" role="button">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navCatalogButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">Service Catalog</a>
+            <ul class="dropdown-menu" aria-labelledby="navCatalogDropdownMenu">
+              <li><a class="dropdown-item" href="../help/index.html">Help</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#aboutModal">About</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="modal fade" id="aboutModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">About</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body about-modal">
+          <p>
+            <strong>Service Catalog:</strong> 1.0<br>
+            <small>Mon Mar 22 11:30:05 EDT 2026</small>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="container bs-docs-container">
+    <div class="row">
+      <div class="col-md-12" role="main" style="padding-top: 85px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px">
+        <h1>Help</h1>
 
-  <div>
-    <p><strong>How can I get started with the load balancing of a cloud-native application in AWS?</strong></p>
-    <p>Getting started with AWS application load balancing involves selecting the Application Load Balancer (ALB) type
-      for HTTP/HTTPS traffic and defining a unique name across at least two Availability Zones for high availability.
-      Key steps include configuring security groups, creating a target group to manage resources, and setting up health
-      checks to monitor target responsiveness. Finally, register target instances and configure listeners to route
-      incoming traffic, ensuring a scalable, functional deployment.</p>
-    <ol>
-      <li>Select the Application Load Balancer Type</li>
-      <li>Define Basic Configuration and Networking</li>
-      <li>Configure Security Groups</li>
-      <li>Set Up Target Groups</li>
-      <li>Configure Health Checks</li>
-      <li>Register Targets and Listeners</li>
-      <li>Test and Enable Advanced Routing</li>
-    </ol>
+        <h3><i class="bi bi-question-circle-fill"></i> Getting Started with Amazon Web Services (AWS)</h3>
+
+        <div>
+          <p><strong>How can I get started with the solution architecture of a cloud-native application in AWS?</strong>
+          </p>
+          <p>Getting started with the solution architecture of a cloud-native application on AWS requires a fundamental
+            shift in perspective, moving away from managing static infrastructure toward a philosophy that prioritizes
+            managed services and APIs. This process begins with establishing clear leadership and accountability by
+            designating a single leader for the initiative and forming a cross-functional "two-pizza" team—comprised of
+            developers, operations, and security experts—to define the project's standards. Before any technical
+            implementation, it is vital to establish core architectural tenets, such as a "serverless first" approach,
+            and to categorize the specific workload—whether it be a web app, data platform, or event-driven service—to
+            ensure the selected services align with the application's goals. The actual design phase should be guided by
+            the AWS Well-Architected Framework, which ensures the solution is built upon the six critical pillars of
+            Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and
+            Sustainability. Architects must then select a compute strategy, often choosing between the high agility of
+            AWS Lambda for serverless workflows or the control provided by Amazon EKS for containerized microservices.
+            This is coupled with the use of purpose-built databases, such as Amazon DynamoDB for key-value storage or
+            Amazon Aurora for relational needs, to avoid the limitations of traditional monolithic databases. Finally,
+            the entire environment should be automated using Infrastructure as Code (IaC) with tools like the AWS CDK,
+            secured with a strong identity foundation via AWS IAM, and validated through the deployment of a meaningful
+            but non-critical pilot workload in production.</p>
+          <ol>
+            <li>Adopt a Cloud-Native Mindset</li>
+            <li>Empower a Single-Threaded Leader</li>
+            <li>Create a Cross-Functional Cloud Team</li>
+            <li>Establish Your Architectural Tenets</li>
+            <li>Determine Your Workload Type</li>
+            <li>Design Using the AWS Well-Architected Framework</li>
+            <li>Select Your Core Compute Service</li>
+            <li>Use Purpose-Built Databases</li>
+            <li>Implement Infrastructure as Code (IaC)</li>
+            <li>Design for Security and Compliance</li>
+            <li>Design for Security and Compliance</li>
+          </ol>
+        </div>
+
+        <div>
+          <p><strong>How can I get started with the load balancing of a cloud-native application in AWS?</strong></p>
+          <p>Getting started with AWS application load balancing involves selecting the Application Load Balancer (ALB)
+            type for HTTP/HTTPS traffic and defining a unique name across at least two Availability Zones for high
+            availability. Key steps include configuring security groups, creating a target group to manage resources,
+            and setting up health checks to monitor target responsiveness. Finally, register target instances and
+            configure listeners to route incoming traffic, ensuring a scalable, functional deployment.</p>
+          <ol>
+            <li>Select the Application Load Balancer Type</li>
+            <li>Define Basic Configuration and Networking</li>
+            <li>Configure Security Groups</li>
+            <li>Set Up Target Groups</li>
+            <li>Configure Health Checks</li>
+            <li>Register Targets and Listeners</li>
+            <li>Test and Enable Advanced Routing</li>
+          </ol>
+        </div>
+
+      </div>
+    </div>
   </div>
-
-  <div>
-    <p>
-      <strong>Florida International University</strong><br>
-      Address: 11200 SW 8th St, Miami, FL 33199<br>
-      Phone: (305) 348-2000
-    </p>
-  </div>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
