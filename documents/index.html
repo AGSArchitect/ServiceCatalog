@@ -12,481 +12,195 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Service Catalog</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html" id="navHomeButton" role="button">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navServicesButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-            <ul class="dropdown-menu" aria-labelledby="navServicesDropdownMenu">
-              <li><a class="dropdown-item" href="#">Amazon Elastic Compute Cloud (EC2)</a></li>
-              <li><a class="dropdown-item" href="#">Amazon Elastic Container Service (ECS)</a></li>
-              <li><a class="dropdown-item" href="#">AWS Lambda</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Amazon Aurora</a></li>
-              <li><a class="dropdown-item" href="#">Amazon ElastiCache</a></li>
-              <li><hr class="dropdown-divider"></li>              
-              <li><a class="dropdown-item" href="#">AWS Application Load Balancer (ALB)</a></li>
-              <li><hr class="dropdown-divider"></li>              
-              <li><a class="dropdown-item" href="#">AWS Transit Gateway</a></li>
-              <li><hr class="dropdown-divider"></li>              
-              <li><a class="dropdown-item" href="#">Amazon Simple Storage Service (S3)</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../documents/index.html" id="navDocumentsButton" role="button">Documents</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../contact/index.html" id="navContactButton" role="button">Contact</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navCatalogButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">Service Catalog</a>
-            <ul class="dropdown-menu" aria-labelledby="navCatalogDropdownMenu">
-              <li><a class="dropdown-item" href="../help/index.html">Help</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#aboutModal">About</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+  <header>
+    <p>| Home | Services | Documents | Contact | About |</p>
+  </header>
+  <main>
+    <h1>Documents</h1>
+    <h3>Amazon Elastic Compute Cloud</h3>
+    <div>
+      <p><strong>Amazon EC2 User Guide:</strong> The Amazon EC2 User Guide is the definitive technical manual for anyone
+        looking to master the Amazon Elastic Compute Cloud ecosystem. It provides a comprehensive roadmap for launching
+        and managing virtual servers, known as instances, within the AWS cloud infrastructure. The document guides users
+        through critical workflows, including selecting the right Amazon Machine Image (AMI) to serve as a software
+        template and choosing between various instance types optimized for compute, memory, or storage-intensive
+        workloads. Beyond basic deployment, the guide covers essential administrative tasks such as configuring security
+        groups to act as virtual firewalls, managing persistent block storage via Amazon EBS, and setting up static IP
+        endpoints. Whether you are a beginner following step-by-step tutorials to launch your first instance or an
+        experienced architect implementing auto-scaling and high-availability strategies, this guide offers the
+        technical depth needed to build secure and scalable solutions. It remains an indispensable resource for
+        maintaining full control over your virtualized environment while ensuring operational efficiency.</p>
+      <p>38 MB [ <a href="https://docs.aws.amazon.com/pdfs/AWSEC2/latest/UserGuide/ec2-ug.pdf" target="_blank">PDF</a> ]
+      </p>
     </div>
-  </nav>
-  <div class="modal fade" id="aboutModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">About</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body about-modal">
-          <p>
-            <strong>Service Catalog:</strong> 1.0<br>
-            <small>Mon Mar 22 11:30:05 EDT 2026</small>
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
+    <div>
+      <p><strong>Amazon EC2 Instance Types:</strong> The Amazon EC2 Instance Types document is an essential technical
+        guide designed to help users navigate the extensive range of virtual hardware configurations available within
+        the Amazon Elastic Compute Cloud ecosystem. It categorizes instances into specialized families—General Purpose,
+        Compute Optimized, Memory Optimized, Storage Optimized, and Accelerated Computing—each tailored to specific
+        workload demands. The guide provides detailed specifications for vCPUs, memory, network performance, and storage
+        capacity, ensuring that developers and architects can balance performance with cost-efficiency. Beyond basic
+        hardware stats, it explores advanced architectural features like the AWS Nitro System, burstable performance
+        options, and specialized instances for high-performance computing or machine learning. By detailing naming
+        conventions and regional availability, the document allows users to make informed decisions when scaling
+        applications. Whether you are hosting a small web server or a massive data-processing cluster, this resource is
+        the definitive reference for optimizing your cloud infrastructure's underlying performance.</p>
+      <p>6.6 MB [ <a href="https://docs.aws.amazon.com/pdfs/ec2/latest/instancetypes/ec2-types.pdf"
+          target="_blank">PDF</a> ]</p>
     </div>
-  </div>
-  <div class="container bs-docs-container">
-    <div class="row">
-      <div class="col-md-12" role="main" style="padding-top: 85px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px">
-        <h1>Documents</h1>
-
-        <h3><i class="bi bi-cpu-fill"></i> Amazon Elastic Compute Cloud</h3>
-
-        <div>
-          <p><strong>Amazon EC2 User Guide:</strong> The Amazon EC2 User Guide is the definitive technical manual for
-            anyone looking to master the Amazon Elastic Compute Cloud ecosystem. It provides a comprehensive roadmap for
-            launching and managing virtual servers, known as instances, within the AWS cloud infrastructure. The
-            document guides users through critical workflows, including selecting the right Amazon Machine Image (AMI)
-            to serve as a software template and choosing between various instance types optimized for compute, memory,
-            or storage-intensive workloads. Beyond basic deployment, the guide covers essential administrative tasks
-            such as configuring security groups to act as virtual firewalls, managing persistent block storage via
-            Amazon EBS, and setting up static IP endpoints. Whether you are a beginner following step-by-step tutorials
-            to launch your first instance or an experienced architect implementing auto-scaling and high-availability
-            strategies, this guide offers the technical depth needed to build secure and scalable solutions. It remains
-            an indispensable resource for maintaining full control over your virtualized environment while ensuring
-            operational efficiency.</p>
-          <p>38 MB [ <a href="#ec2d001Modal" data-bs-toggle="modal">PDF</a> ]</p>
-        </div>
-
-        <div>
-          <p><strong>Amazon EC2 Instance Types:</strong> The Amazon EC2 Instance Types document is an essential
-            technical guide designed to help users navigate the extensive range of virtual hardware configurations
-            available within the Amazon Elastic Compute Cloud ecosystem. It categorizes instances into specialized
-            families—General Purpose, Compute Optimized, Memory Optimized, Storage Optimized, and Accelerated
-            Computing—each tailored to specific workload demands. The guide provides detailed specifications for vCPUs,
-            memory, network performance, and storage capacity, ensuring that developers and architects can balance
-            performance with cost-efficiency. Beyond basic hardware stats, it explores advanced architectural features
-            like the AWS Nitro System, burstable performance options, and specialized instances for high-performance
-            computing or machine learning. By detailing naming conventions and regional availability, the document
-            allows users to make informed decisions when scaling applications. Whether you are hosting a small web
-            server or a massive data-processing cluster, this resource is
-            the definitive reference for optimizing your cloud infrastructure's underlying performance.</p>
-          <p>6.6 MB [ <a href="#ec2d002Modal" data-bs-toggle="modal">PDF</a> ]</p>
-        </div>
-
-        <div>
-          <p><strong>AWS Nitro Enclaves User Guide:</strong> The AWS Nitro Enclaves User Guide is a specialized
-            technical resource designed to help users create highly isolated compute environments, known as enclaves,
-            within Amazon EC2 instances. This documentation focuses on the architecture and implementation of these
-            hardened, virtual machines that possess no persistent storage, external networking, or interactive
-            access—not even for root or administrator users. The guide provides step-by-step instructions for the
-            complete enclave lifecycle, from launching an enclave-enabled parent instance to building an Enclave Image
-            File (EIF) using the Nitro CLI. It also delves into critical security features such as cryptographic
-            attestation, which allows applications to prove their identity to external services like AWS KMS before
-            accessing sensitive data. By detailing how to manage CPU and memory allocation through the Nitro Hypervisor,
-            the guide ensures that developers can process highly sensitive information—such as financial records or
-            personally identifiable data—with a significantly reduced attack surface. Whether you are automating
-            deployments with the AWS SDK or manually configuring local vsock communication, this document is essential
-            for mastering confidential computing on AWS.</p>
-          <p>1.5 MB [ <a href="#ec2d003Modal" data-bs-toggle="modal">PDF</a> ]</p>
-        </div>
-
-        <div>
-          <p><strong>Amazon EC2 Developer Guide:</strong> The Amazon EC2 Developer Guide is a comprehensive technical
-            document designed for software engineers and architects who are building and integrating applications with
-            Amazon Elastic Compute Cloud. It serves as a deep-dive manual that focuses on the programming interfaces and
-            specialized tools required to automate, manage, and scale virtualized infrastructure. The guide provides
-            extensive code examples across multiple programming languages, demonstrating how to use AWS SDKs to perform
-            essential operations such as launching instances, managing security groups, and configuring persistent
-            storage. Beyond basic setup, it delves into complex developer-centric topics including API request signing,
-            error handling, and the use of the AWS Command Line Interface (CLI). By centralizing best practices for
-            security and resource management, the guide ensures developers can create robust, high-performance cloud
-            applications while maintaining precise programmatic control over their compute environment. This resource is
-            essential for any developer looking to leverage the full power of the EC2 API and its diverse capabilities.
-          </p>
-          <p>7.1 MB [ <a href="#ec2d004Modal" data-bs-toggle="modal">PDF</a> ]</p>
-        </div>
-
-        <div>
-          <p><strong>Amazon EC2 API Reference:</strong> The Amazon EC2 API Reference document is the definitive
-            technical manual for developers and systems architects requiring granular, programmatic control over their
-            cloud infrastructure. It serves as an exhaustive catalog of every available action within the Amazon Elastic
-            Compute Cloud, ranging from fundamental tasks like launching and terminating instances to advanced
-            operations such as managing VPC peering, configuring network interfaces, and handling complex block storage
-            volumes. Each API action is meticulously documented with its required and optional parameters, response
-            structures, and potential error codes, ensuring that automated scripts and custom applications can interact
-            reliably with AWS services. The reference also provides vital information on request signing, query
-            authentication, and the specific data types used across the service, making it an essential companion to the
-            AWS SDKs and Command Line Interface. By detailing the underlying mechanics of the EC2 service, this document
-            empowers users to build sophisticated, self-healing, and highly automated cloud environments that can scale
-            dynamically to meet the needs of any modern enterprise workload. For more information, visit the official
-            Amazon EC2 API Reference.</p>
-          <p>34 MB [ <a href="#ec2d005Modal" data-bs-toggle="modal">PDF</a> ]</p>
-        </div>
-
-        <h3><i class="bi bi-database-fill"></i> Amazon RDS and Aurora</h3>
-
-        <div>
-          <p><strong>Amazon RDS User Guide</strong> The Amazon RDS User Guide is the definitive technical manual for
-            developers and database administrators seeking to manage relational databases within the AWS cloud
-            environment. This comprehensive document details how to efficiently set up, operate, and scale a relational
-            database, supporting popular engines such as MySQL, PostgreSQL, MariaDB, Oracle, and Microsoft SQL Server.
-            It provides a clear roadmap for automating critical yet repetitive administrative tasks, including hardware
-            provisioning, software patching, and automated backups. The guide also delves into high-availability
-            strategies like Multi-AZ deployments and read replicas to ensure data durability and performance. Security
-            is a primary focus, with detailed instructions on configuring VPC isolation, IAM database authentication,
-            and encryption at rest using AWS KMS. Whether you are a beginner using the "Easy Create" method or an expert
-            managing global clusters, this resource provides the necessary insights to build a secure, cost-effective,
-            and high-performance database infrastructure that scales dynamically with your application's needs.</p>
-          <p>67.5 MB [ <a href="#rdsd001Modal" data-bs-toggle="modal">PDF</a> ]</p>
-        </div>
-
-        <div>
-          <p><strong>Amazon RDS API Reference</strong> The Amazon RDS API Reference document is an essential technical
-            resource for developers and engineers who need to programmatically interact with the Amazon Relational
-            Database Service. It provides a comprehensive catalog of all available API actions, such as creating,
-            modifying, and deleting DB instances, as well as managing snapshots, security groups, and read replicas.
-            Each entry in the reference includes detailed information on request parameters, response elements, and
-            potential error codes, ensuring that developers can build robust applications with precise control over
-            their database infrastructure. The documentation also outlines the fundamental structure of the RDS query
-            API, including how to authenticate requests and handle various data formats. By utilizing this reference,
-            teams can automate complex database management workflows—such as scaling compute resources or orchestrating
-            cross-region failovers—directly through the AWS SDKs or the Command Line Interface (CLI). This programmatic
-            approach allows for greater operational agility and consistency, making the API Reference a cornerstone for
-            anyone architecting high-performance, automated database solutions within the AWS cloud ecosystem.</p>
-          <p>17.3 MB [ <a href="#rdsd002Modal" data-bs-toggle="modal">PDF</a> ]</p>
-        </div>
-
-        <div>
-          <p><strong>Amazon RDS Data API Reference</strong> The Amazon RDS Data API Reference is an essential technical
-            resource for developers looking to interact with Amazon Aurora databases using a web-services interface.
-            Unlike traditional database connections that require persistent drivers and complex connection pooling, the
-            Data API allows you to execute SQL statements via a secure HTTP endpoint. This reference document provides a
-            complete catalog of API actions, such as executing statements, performing batch operations, and managing
-            transactions, all without the overhead of managing long-lived connections. Each entry includes detailed
-            descriptions of request parameters, response structures, and common error codes, enabling seamless
-            integration with serverless applications like AWS Lambda. By detailing how to use the AWS SDKs to
-            communicate with your Aurora clusters, the guide ensures that developers can focus on application logic
-            while the Data API handles the underlying connection scaling and security authentication via AWS Secrets
-            Manager. It is a critical manual for anyone architecting modern, scalable, and highly available cloud-native
-            database solutions.</p>
-          <p>1.1 MB [ <a href="#rdsd003Modal" data-bs-toggle="modal">PDF</a> ]</p>
-        </div>
-
-        <h3><i class="bi bi-cloud-haze2-fill"></i> Elastic Load Balancing</h3>
-
-        <div>
-          <p><strong>User Guide for Application Load Balancers</strong> The User Guide for Application Load Balancers is
-            a foundational technical manual for implementing layer 7 load balancing within the Amazon Web Services
-            ecosystem. It provides comprehensive instructions on how to route incoming HTTP and HTTPS traffic to various
-            targets, including Amazon EC2 instances, containers, and Lambda functions. The guide details advanced
-            request-routing features, such as path-based and host-based routing, which are essential for modern
-            microservices and containerized architectures. Additionally, it covers critical configuration components
-            like listeners, target groups, and health checks to ensure high availability and application reliability.
-            Security is also a major focus, with sections dedicated to SSL/TLS termination, web application firewall
-            integration, and user authentication. By following this guide, developers and system administrators can
-            optimize application performance, simplify traffic management, and build robust, scalable cloud
-            infrastructures that respond dynamically to fluctuating user demands. This documentation is indispensable
-            for anyone looking to provide a seamless and secure entry point for their web applications while maintaining
-            granular control over traffic distribution and back-end health monitoring.
-          </p>
-          <p>3.2 MB [ <a href="#elbd001Modal" data-bs-toggle="modal">PDF</a> ]</p>
-        </div>
-
-        <h3><i class="bi bi-pci-card-network"></i> Networking</h3>
-
-        <div>
-          <p><strong>AWS Transit Gateway</strong> AWS Transit Gateway serves as a regional virtual router that
-            streamlines cloud networking by interconnecting thousands of Amazon Virtual Private Clouds and on-premises
-            networks through a centralized hub. The technical documentation, located at the AWS documentation site,
-            provides an exhaustive overview of the service, detailing how it eliminates complex mesh peering and allows
-            for easier scalability. Administrators can find critical information regarding resource attachments, route
-            table management, and the implementation of Equal Cost Multipath routing to optimize data throughput. The
-            guide explains how the gateway operates at Layer 3 to ensure traffic remains within the secure AWS global
-            backbone while offering high availability. Furthermore, the documentation covers advanced topics such as
-            peering gateways across regions, integrating Site-to-Site VPNs, and utilizing Direct Connect for hybrid
-            connectivity. It serves as an essential reference for architects aiming to build a secure, efficient, and
-            highly integrated multi-VPC infrastructure.</p>
-          <p>2.1 MB [ <a href="#netd001Modal" data-bs-toggle="modal">PDF</a> ]</p>
-        </div>
-
-        <h3><i class="bi bi-hdd-fill"></i> Storage</h3>
-
-        <div>
-          <p><strong>Amazon S3 User Guide</strong> The Amazon S3 User Guide is a comprehensive technical document
-            designed to help users harness the full potential of Amazon Simple Storage Service for scalable, high-speed
-            object storage. Located at the official AWS documentation site, this guide provides in-depth instructions
-            for storing and retrieving any amount of data from anywhere on the web. It covers foundational concepts such
-            as creating buckets, managing objects, and understanding the flat, non-hierarchical namespace. More advanced
-            sections detail critical features like storage classes for cost optimization—ranging from S3 Standard to S3
-            Glacier—and lifecycle policies for automated data transitions. Security is a primary focus, with extensive
-            documentation on Identity and Access Management, bucket policies, and server-side encryption to protect data
-            at rest. Additionally, the guide explains modern capabilities like S3 Object Lambda, Multi-Region Access
-            Points, and strong read-after-write consistency. Whether you are a developer integrating S3 via the AWS SDKs
-            or an administrator managing large-scale data lakes, this manual serves as the definitive resource for
-            maintaining a secure, durable, and highly available cloud storage infrastructure.</p>
-          <p>27.3 MB [ <a href="#stod001Modal" data-bs-toggle="modal">PDF</a> ]</p>
-        </div>
-
-        <!--[ Amazon Elastic Compute Cloud: Document 1 ]-->
-        <div class="modal fade" id="ec2d001Modal" tabindex="-1" aria-labelledby="ec2d001ModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="ec2d001ModalLabel">Amazon EC2 User Guide</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <iframe width="100%" height="100%"
-                  src="https://docs.aws.amazon.com/pdfs/AWSEC2/latest/UserGuide/ec2-ug.pdf"></iframe>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--[ Amazon Elastic Compute Cloud: Document 2 ]-->
-        <div class="modal fade" id="ec2d002Modal" tabindex="-1" aria-labelledby="ec2d002ModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="ec2d002ModalLabel">Amazon EC2 Instance Types</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <iframe width="100%" height="100%"
-                  src="https://docs.aws.amazon.com/pdfs/ec2/latest/instancetypes/ec2-types.pdf"></iframe>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--[ Amazon Elastic Compute Cloud: Document 3 ]-->
-        <div class="modal fade" id="ec2d003Modal" tabindex="-1" aria-labelledby="ec2d003ModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="ec2d003ModalLabel">AWS Nitro Enclaves User Guide</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <iframe width="100%" height="100%"
-                  src="https://docs.aws.amazon.com/pdfs/enclaves/latest/user/enclaves-user.pdf"></iframe>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--[ Amazon Elastic Compute Cloud: Document 4 ]-->
-        <div class="modal fade" id="ec2d004Modal" tabindex="-1" aria-labelledby="ec2d004ModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="ec2d004ModalLabel">Amazon EC2 Developer Guide</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <iframe width="100%" height="100%"
-                  src="https://docs.aws.amazon.com/pdfs/ec2/latest/devguide/ec2-dg.pdf"></iframe>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--[ Amazon Elastic Compute Cloud: Document 5 ]-->
-        <div class="modal fade" id="ec2d005Modal" tabindex="-1" aria-labelledby="ec2d005ModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="ec2d005ModalLabel">Amazon EC2 API Reference</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <iframe width="100%" height="100%"
-                  src="https://docs.aws.amazon.com/pdfs/AWSEC2/latest/APIReference/ec2-api.pdf"></iframe>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--[ Amazon RDS and Aurora: Document 1 ]-->
-        <div class="modal fade" id="rdsd001Modal" tabindex="-1" aria-labelledby="rdsd001ModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="rdsd001ModalLabel">Amazon EC2 API Reference</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <iframe width="100%" height="100%"
-                  src="https://docs.aws.amazon.com/pdfs/AmazonRDS/latest/UserGuide/rds-ug.pdf"></iframe>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--[ Amazon RDS and Aurora: Document 2 ]-->
-        <div class="modal fade" id="rdsd002Modal" tabindex="-1" aria-labelledby="rdsd002ModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="rdsd002ModalLabel">Amazon RDS Data API Reference</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <iframe width="100%" height="100%"
-                  src="https://docs.aws.amazon.com/pdfs/AmazonRDS/latest/APIReference/rds-api.pdf"></iframe>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--[ Amazon RDS and Aurora: Document 3 ]-->
-        <div class="modal fade" id="rdsd003Modal" tabindex="-1" aria-labelledby="rdsd003ModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="rdsd003ModalLabel">Amazon RDS Data API Reference</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <iframe width="100%" height="100%"
-                  src="https://docs.aws.amazon.com/pdfs/rdsdataservice/latest/APIReference/rdsdataservice-api.pdf"></iframe>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--[ Elastic Load Balancing: Document 1 ]-->
-        <div class="modal fade" id="elbd001Modal" tabindex="-1" aria-labelledby="elbd001ModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="elbd001ModalLabel">User Guide for Application Load Balancers</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <iframe width="100%" height="100%"
-                  src="https://docs.aws.amazon.com/pdfs/elasticloadbalancing/latest/userguide/elb-ug.pdf"></iframe>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--[ Networking: Document 1 ]-->
-        <div class="modal fade" id="netd001Modal" tabindex="-1" aria-labelledby="netd001ModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="netd001ModalLabel">AWS Transit Gateway</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <iframe width="100%" height="100%"
-                  src="https://docs.aws.amazon.com/pdfs/vpc/latest/tgw/vpc-tgw.pdf"></iframe>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--[ Networking: Document 1 ]-->
-        <div class="modal fade" id="stod001Modal" tabindex="-1" aria-labelledby="stod001ModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="stod001ModalLabel">Amazon S3 User Guide</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <iframe width="100%" height="100%"
-                  src="https://docs.aws.amazon.com/pdfs/AmazonS3/latest/userguide/s3-userguide.pdf"></iframe>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
+    <div>
+      <p><strong>AWS Nitro Enclaves User Guide:</strong> The AWS Nitro Enclaves User Guide is a specialized technical
+        resource designed to help users create highly isolated compute environments, known as enclaves, within Amazon
+        EC2 instances. This documentation focuses on the architecture and implementation of these hardened, virtual
+        machines that possess no persistent storage, external networking, or interactive access—not even for root or
+        administrator users. The guide provides step-by-step instructions for the complete enclave lifecycle, from
+        launching an enclave-enabled parent instance to building an Enclave Image File (EIF) using the Nitro CLI. It
+        also delves into critical security features such as cryptographic attestation, which allows applications to
+        prove their identity to external services like AWS KMS before accessing sensitive data. By detailing how to
+        manage CPU and memory allocation through the Nitro Hypervisor, the guide ensures that developers can process
+        highly sensitive information—such as financial records or personally identifiable data—with a significantly
+        reduced attack surface. Whether you are automating deployments with the AWS SDK or manually configuring local
+        vsock communication, this document is essential for mastering confidential computing on AWS.</p>
+      <p>1.5 MB [ <a href="https://docs.aws.amazon.com/pdfs/enclaves/latest/user/enclaves-user.pdf"
+          target="_blank">PDF</a> ]</p>
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <div>
+      <p><strong>Amazon EC2 Developer Guide:</strong> The Amazon EC2 Developer Guide is a comprehensive technical
+        document designed for software engineers and architects who are building and integrating applications with
+        Amazon Elastic Compute Cloud. It serves as a deep-dive manual that focuses on the programming interfaces and
+        specialized tools required to automate, manage, and scale virtualized infrastructure. The guide provides
+        extensive code examples across multiple programming languages, demonstrating how to use AWS SDKs to perform
+        essential operations such as launching instances, managing security groups, and configuring persistent storage.
+        Beyond basic setup, it delves into complex developer-centric topics including API request signing, error
+        handling, and the use of the AWS Command Line Interface (CLI). By centralizing best practices for security and
+        resource management, the guide ensures developers can create robust, high-performance cloud applications while
+        maintaining precise programmatic control over their compute environment. This resource is essential for any
+        developer looking to leverage the full power of the EC2 API and its diverse capabilities.
+      </p>
+      <p>7.1 MB [ <a href="https://docs.aws.amazon.com/pdfs/ec2/latest/devguide/ec2-dg.pdf" target="_blank">PDF</a> ]
+      </p>
+    </div>
+    <div>
+      <p><strong>Amazon EC2 API Reference:</strong> The Amazon EC2 API Reference document is the definitive technical
+        manual for developers and systems architects requiring granular, programmatic control over their cloud
+        infrastructure. It serves as an exhaustive catalog of every available action within the Amazon Elastic Compute
+        Cloud, ranging from fundamental tasks like launching and terminating instances to advanced operations such as
+        managing VPC peering, configuring network interfaces, and handling complex block storage volumes. Each API
+        action is meticulously documented with its required and optional parameters, response structures, and potential
+        error codes, ensuring that automated scripts and custom applications can interact reliably with AWS services.
+        The reference also provides vital information on request signing, query authentication, and the specific data
+        types used across the service, making it an essential companion to the AWS SDKs and Command Line Interface. By
+        detailing the underlying mechanics of the EC2 service, this document empowers users to build sophisticated,
+        self-healing, and highly automated cloud environments that can scale dynamically to meet the needs of any modern
+        enterprise workload. For more information, visit the official Amazon EC2 API Reference.</p>
+      <p>34 MB [ <a href="https://docs.aws.amazon.com/pdfs/AWSEC2/latest/APIReference/ec2-api.pdf"
+          target="_blank">PDF</a> ]</p>
+    </div>
+    <h3>Amazon RDS and Aurora</h3>
+    <div>
+      <p><strong>Amazon RDS User Guide</strong> The Amazon RDS User Guide is the definitive technical manual for
+        developers and database administrators seeking to manage relational databases within the AWS cloud environment.
+        This comprehensive document details how to efficiently set up, operate, and scale a relational database,
+        supporting popular engines such as MySQL, PostgreSQL, MariaDB, Oracle, and Microsoft SQL Server. It provides a
+        clear roadmap for automating critical yet repetitive administrative tasks, including hardware provisioning,
+        software patching, and automated backups. The guide also delves into high-availability strategies like Multi-AZ
+        deployments and read replicas to ensure data durability and performance. Security is a primary focus, with
+        detailed instructions on configuring VPC isolation, IAM database authentication, and encryption at rest using
+        AWS KMS. Whether you are a beginner using the "Easy Create" method or an expert managing global clusters, this
+        resource provides the necessary insights to build a secure, cost-effective, and high-performance database
+        infrastructure that scales dynamically with your application's needs.</p>
+      <p>67.5 MB [ <a href="https://docs.aws.amazon.com/pdfs/AmazonRDS/latest/UserGuide/rds-ug.pdf"
+          target="_blank">PDF</a> ]</p>
+    </div>
+    <div>
+      <p><strong>Amazon RDS API Reference</strong> The Amazon RDS API Reference document is an essential technical
+        resource for developers and engineers who need to programmatically interact with the Amazon Relational Database
+        Service. It provides a comprehensive catalog of all available API actions, such as creating, modifying, and
+        deleting DB instances, as well as managing snapshots, security groups, and read replicas. Each entry in the
+        reference includes detailed information on request parameters, response elements, and potential error codes,
+        ensuring that developers can build robust applications with precise control over their database infrastructure.
+        The documentation also outlines the fundamental structure of the RDS query API, including how to authenticate
+        requests and handle various data formats. By utilizing this reference, teams can automate complex database
+        management workflows—such as scaling compute resources or orchestrating cross-region failovers—directly through
+        the AWS SDKs or the Command Line Interface (CLI). This programmatic approach allows for greater operational
+        agility and consistency, making the API Reference a cornerstone for anyone architecting high-performance,
+        automated database solutions within the AWS cloud ecosystem.</p>
+      <p>17.3 MB [ <a href="https://docs.aws.amazon.com/pdfs/AmazonRDS/latest/APIReference/rds-api.pdf"
+          target="_blank">PDF</a> ]</p>
+    </div>
+    <div>
+      <p><strong>Amazon RDS Data API Reference</strong> The Amazon RDS Data API Reference is an essential technical
+        resource for developers looking to interact with Amazon Aurora databases using a web-services interface. Unlike
+        traditional database connections that require persistent drivers and complex connection pooling, the Data API
+        allows you to execute SQL statements via a secure HTTP endpoint. This reference document provides a complete
+        catalog of API actions, such as executing statements, performing batch operations, and managing transactions,
+        all without the overhead of managing long-lived connections. Each entry includes detailed descriptions of
+        request parameters, response structures, and common error codes, enabling seamless integration with serverless
+        applications like AWS Lambda. By detailing how to use the AWS SDKs to communicate with your Aurora clusters, the
+        guide ensures that developers can focus on application logic while the Data API handles the underlying
+        connection scaling and security authentication via AWS Secrets Manager. It is a critical manual for anyone
+        architecting modern, scalable, and highly available cloud-native database solutions.</p>
+      <p>1.1 MB [ <a href="https://docs.aws.amazon.com/pdfs/rdsdataservice/latest/APIReference/rdsdataservice-api.pdf"
+          target="_blank">PDF</a> ]</p>
+    </div>
+    <h3>Elastic Load Balancing</h3>
+    <div>
+      <p><strong>User Guide for Application Load Balancers</strong> The User Guide for Application Load Balancers is a
+        foundational technical manual for implementing layer 7 load balancing within the Amazon Web Services ecosystem.
+        It provides comprehensive instructions on how to route incoming HTTP and HTTPS traffic to various targets,
+        including Amazon EC2 instances, containers, and Lambda functions. The guide details advanced request-routing
+        features, such as path-based and host-based routing, which are essential for modern microservices and
+        containerized architectures. Additionally, it covers critical configuration components like listeners, target
+        groups, and health checks to ensure high availability and application reliability. Security is also a major
+        focus, with sections dedicated to SSL/TLS termination, web application firewall integration, and user
+        authentication. By following this guide, developers and system administrators can optimize application
+        performance, simplify traffic management, and build robust, scalable cloud infrastructures that respond
+        dynamically to fluctuating user demands. This documentation is indispensable for anyone looking to provide a
+        seamless and secure entry point for their web applications while maintaining granular control over traffic
+        distribution and back-end health monitoring.
+      </p>
+      <p>3.2 MB [ <a href="https://docs.aws.amazon.com/pdfs/elasticloadbalancing/latest/userguide/elb-ug.pdf"
+          target="_blank">PDF</a> ]</p>
+    </div>
+    <h3>Networking</h3>
+    <div>
+      <p><strong>AWS Transit Gateway</strong> AWS Transit Gateway serves as a regional virtual router that streamlines
+        cloud networking by interconnecting thousands of Amazon Virtual Private Clouds and on-premises networks through
+        a centralized hub. The technical documentation, located at the AWS documentation site, provides an exhaustive
+        overview of the service, detailing how it eliminates complex mesh peering and allows for easier scalability.
+        Administrators can find critical information regarding resource attachments, route table management, and the
+        implementation of Equal Cost Multipath routing to optimize data throughput. The guide explains how the gateway
+        operates at Layer 3 to ensure traffic remains within the secure AWS global backbone while offering high
+        availability. Furthermore, the documentation covers advanced topics such as peering gateways across regions,
+        integrating Site-to-Site VPNs, and utilizing Direct Connect for hybrid connectivity. It serves as an essential
+        reference for architects aiming to build a secure, efficient, and highly integrated multi-VPC infrastructure.
+      </p>
+      <p>2.1 MB [ <a href="https://docs.aws.amazon.com/pdfs/vpc/latest/tgw/vpc-tgw.pdf" target="_blank">PDF</a> ]</p>
+    </div>
+    <h3>Storage</h3>
+    <div>
+      <p><strong>Amazon S3 User Guide</strong> The Amazon S3 User Guide is a comprehensive technical document designed
+        to help users harness the full potential of Amazon Simple Storage Service for scalable, high-speed object
+        storage. Located at the official AWS documentation site, this guide provides in-depth instructions for storing
+        and retrieving any amount of data from anywhere on the web. It covers foundational concepts such as creating
+        buckets, managing objects, and understanding the flat, non-hierarchical namespace. More advanced sections detail
+        critical features like storage classes for cost optimization—ranging from S3 Standard to S3 Glacier—and
+        lifecycle policies for automated data transitions. Security is a primary focus, with extensive documentation on
+        Identity and Access Management, bucket policies, and server-side encryption to protect data at rest.
+        Additionally, the guide explains modern capabilities like S3 Object Lambda, Multi-Region Access Points, and
+        strong read-after-write consistency. Whether you are a developer integrating S3 via the AWS SDKs or an
+        administrator managing large-scale data lakes, this manual serves as the definitive resource for maintaining a
+        secure, durable, and highly available cloud storage infrastructure.</p>
+      <p>27.3 MB [ <a href="https://docs.aws.amazon.com/pdfs/AmazonS3/latest/userguide/s3-userguide.pdf"
+          target="_blank">PDF</a> ]</p>
+    </div>
+  </main>
+  <footer>
+    <p>2026 Service Catalog</p>
+  </footer>
 </body>
 
 </html>
