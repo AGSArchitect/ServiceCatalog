@@ -1,0 +1,41 @@
+body {
+    padding-top: 25px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 25px;
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: #FEFEFE;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #081E3F;
+}
+
+h1 {
+    color: #081E3F;
+}
+
+h3 {
+    color: #B6862C;
+}
+
+/* --- */
+
+.section {
+    color: #4979D3;
+}
+
+.bookStyle {
+    text-align: justify;
+    hyphens: auto;
+}
+
+.rightAligned {
+    text-align: right;
+}
+
+footer {
+    text-align: center;
+    color: #BBBBBB;
+}
