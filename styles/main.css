@@ -20,10 +20,8 @@ h3 {
     color: #B6862C;
 }
 
-/* --- */
-
 .section {
-    color: #4979D3;
+    color: #416CBD;
 }
 
 .bookStyle {
@@ -36,6 +34,7 @@ h3 {
 }
 
 footer {
+    margin-top: 25px;
     text-align: center;
     color: #BBBBBB;
 }
