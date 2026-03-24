@@ -66,3 +66,22 @@ footer {
     text-align: center;
     color: #BBBBBB;
 }
+
+label {
+    display: block;
+    margin-bottom: .25em;
+}
+
+input, select {
+    width: 50%;
+    font-size: inherit;
+    padding: .4em;
+    margin-bottom: .5em;
+}
+
+button {
+    font-weight: bold;
+    width: 8em;
+    padding: 0.5em;
+    color: #081E3F;
+}
