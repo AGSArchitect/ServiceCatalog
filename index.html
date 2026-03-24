@@ -22,18 +22,21 @@
   <main>
     <h1>Home</h1>
     <div>
-      <p class="bookStyle">Welcome to your Service Catalog—the digital toolbox for all your school projects!</p>
-      <p class="bookStyle">Think of this as your handy workshop map. Instead of getting lost in a warehouse of technical parts, we've laid everything out in clear, labeled aisles like Storage, Databases, and Networking. Whether you need to house your data or build a connection, the simple top menu helps you navigate with ease. Each tool comes with a plain-English description and a helpful diagram, so you'll know exactly how it fits into your project before you even pick it up. It's the perfect starting point to help you grab the right resources for your work, no "tech expert" title required.</p>
+      <p class="bookStyle">This Service Catalog offers a curated selection of industry-leading services designed to build, scale, and secure modern cloud architectures. For compute versatility, Amazon EC2 provides resizable virtual server capacity, allowing teams to manage instances tailored to specific CPU and memory requirements. To modernize application delivery, Amazon ECS serves as a fully managed container orchestration service, streamlining the deployment of Dockerized microservices across either EC2 instances or serverless AWS Fargate environments. For event-driven workloads, AWS Lambda enables a purely serverless execution model where code runs only in response to specific triggers, eliminating all infrastructure management overhead.</p>
+      <p class="bookStyle">The data layer is anchored by Amazon Aurora, a high-performance relational database compatible with MySQL and PostgreSQL that offers the speed of commercial databases with the simplicity of open source. To enhance application responsiveness and reduce database load, Amazon ElastiCache provides a sub-millisecond in-memory caching layer using Redis or Memcached. All persistent object data, from static web assets to massive data lakes, is stored with 99.999999999% durability in Amazon S3, the industry's standard for scalable and cost-effective cloud storage.</p>
+      <p class="bookStyle">Networking and connectivity are optimized through the AWS Application Load Balancer (ALB), which intelligently routes incoming traffic to targets like EC2 instances or Lambda functions based on advanced request content. Finally, the AWS Transit Gateway acts as a centralized hub to simplify network topology, interconnecting thousands of Virtual Private Clouds (VPCs) and on-premises environments with consolidated management and high-bandwidth performance. Together, these services form a robust, self-healing framework capable of supporting global-scale digital transformation.</p>
     </div>
-    <div class="audioBlock">
-      <audio controls>
-        <source src="audio/cop3835.m4a" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
+    <div>
+      <h3>Login Command</h3>
+      <p>Use the following command to log into your EC2 instance. Create an <a href="https://signin.aws.amazon.com/signup?request_type=register" target="_blank">account</a> and start using AWS, taking advantage of AWS Free Tier. The AWS Free Tier is a program designed for beginners to learn and experiment with cloud services without upfront costs.</p>
+    </div>    
     <div class="codeBlock">
       aws sso login --profile your-profile-name
     </div>
+    <div>
+      <h3>Documented Services</h3>
+      <p>The Service Catalog comprises the following services. However, more services will be added in the future. We also plan to include application topology blueprints and other architectural resources.</p>
+    </div>    
     <div>
       <table class="tableFormat">
         <tbody>
@@ -68,6 +71,56 @@
           <tr>
             <td><a href="services/c05s01.html"><img src="images/icons/s3.png"></a></td>
             <td>Amazon Simple Storage Service (S3)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <h3>Audio Introduction</h3>
+      <p>The following series of audio files provides a brief introduction to the project in different languages.</p>
+    </div>
+    <div>
+      <table class="tableFormat">
+        <tbody>
+          <tr>
+            <td class="centerAligned">
+              <strong>English</strong><br>
+              <audio controls class="audioBlock">
+                <source src="audio/cop3835-english.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>              
+            </td>
+            <td class="centerAligned">
+              <strong>Español</strong><br>
+              <audio controls class="audioBlock">
+                <source src="audio/cop3835-spanish.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td class="centerAligned">
+              <strong>Italiano</strong><br>
+              <audio controls class="audioBlock">
+                <source src="audio/cop3835-italian.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+          </tr>
+          <tr>
+            <td class="centerAligned">
+              <strong>Português</strong><br>
+              <audio controls class="audioBlock">
+                <source src="audio/cop3835-portuguese.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>              
+            </td>
+            <td class="centerAligned">
+              <strong>日本語</strong><br>
+              <audio controls class="audioBlock">
+                <source src="audio/cop3835-japanese.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td class="centerAligned">&nbsp;</td>
           </tr>
         </tbody>
       </table>
