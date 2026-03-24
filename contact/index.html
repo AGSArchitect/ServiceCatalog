@@ -26,7 +26,38 @@
       <p class="bookStyle">Think of the Service Catalog as your go-to guide for all the digital tools you might need for your school projects. Instead of getting overwhelmed by a long list of technical options, the catalog organizes everything into easy-to-understand categories like Storage, Databases, and Networking. You can use the simple top menu to browse around and see helpful diagrams and quick descriptions that explain exactly what each service does in plain English. It’s the perfect starting point to help you pick the right tools for your work without needing to be a tech expert first.</p>
     </div>
     <div>
-      <!-- FORM GOES HERE -->
+      <form action="confirmation.html" method="post">
+        <div>
+          <label for="firstName">First name:</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Ariel" maxlength="32" required>
+        </div>
+        <div>
+          <label for="lastName">Last name:</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Gonzalez" maxlength="32" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="agonz558@fiu.edu" maxlength="128" required>
+        </div>
+        <div>
+          <label for="interest">Interest:</label>
+          <select id="interest" name="interest" required>
+            <option value="1" selected>Infrastructure & Architecture</option>
+            <option value="2">Cloud Security & Compliance</option>
+            <option value="3">DevOps & Automation</option>
+            <option value="4">AI & Big Data Analytics</option>
+            <option value="5">Cloud Business & Strategy</option>
+          </select>
+        </div>
+        <div>
+          <label for="availability">Availability:</label>
+          <input type="datetime-local" id="availability" name="availability" required>
+        </div>
+        <div>
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
     </div>
   </main>
   <footer>
