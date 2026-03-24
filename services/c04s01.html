@@ -19,14 +19,30 @@
   <header>
     <p>| <a href="../index.html">Home</a> | <a href="../services/index.html">Services</a> | <a href="../documents/index.html">Documents</a> | <a href="../contact/index.html">Contact</a> | <a href="../help/index.html">Help</a> | <a href="../about/index.html">About</a> |</p>
   </header>
-  <main>
-    <h1>Services</h1>
-    <h3>AWS Transit Gateway</h3>
-    <div>
-      <p class="bookStyle">AWS Transit Gateway (TGW) is a highly scalable, regional routing service that acts as a centralized hub to interconnect thousands of Virtual Private Clouds (VPCs) and on-premises networks. By functioning as a cloud-native router at Layer 3, it effectively eliminates the complexity of managing large-scale, point-to-point VPC peering meshes, which become operationally prohibitive as infrastructure grows. Instead of maintaining <code>N(N-1)/2</code> peering relationships, architects can implement a hub-and-spoke topology where each VPC or VPN connection requires only a single attachment to the Transit Gateway, significantly streamlining routing table management and network visibility.</p>
-      <p class="bookStyle">Technically, Transit Gateway utilizes a system of attachments and route tables to control traffic flow between spokes. When a packet enters the gateway from an attachment, it is evaluated against a specific Transit Gateway route table to determine its next-hop destination. This architecture supports advanced networking patterns, such as transitive routing, which is not possible with standard VPC peering. Furthermore, it allows for sophisticated network segmentation by associating different attachments with separate route tables—similar to Virtual Routing and Forwarding (VRF) instances in traditional on-premises hardware. This enables engineers to isolate environments (e.g., Development vs. Production) or redirect traffic through a centralized inspection VPC containing firewalls or intrusion detection systems.</p>
-      <p class="bookStyle">For hybrid cloud connectivity, Transit Gateway integrates seamlessly with AWS Direct Connect and Site-to-Site VPN, supporting Equal-Cost Multi-Path (ECMP) routing to aggregate bandwidth across multiple tunnels for increased throughput. It also supports inter-Region peering, allowing data to traverse the AWS global backbone with built-in encryption and reduced exposure to the public internet. By consolidating management into a single resource, AWS Transit Gateway reduces the "undifferentiated heavy lifting" of network administration, providing a robust, elastic, and secure foundation for globally distributed architectures.</p>
-    </div>
+  <main class="servicesMain">
+    <aside class="servicesAside">
+      <div>
+        <h1>Services</h1>
+        <ul class="servicesMenu">
+          <li><a href="c01s01.html">Amazon Elastic Compute Cloud (EC2)</a></li>
+          <li><a href="c01s02.html">Amazon Elastic Container Service (ECS)</a></li>
+          <li><a href="c01s03.html">AWS Lambda</a></li>
+          <li><a href="c02s01.html">Amazon Aurora</a></li>
+          <li><a href="c02s02.html">Amazon ElastiCache</a></li>
+          <li><a href="c03s01.html">AWS Application Load Balancer (ALB)</a></li>
+          <li><a href="c04s01.html">AWS Transit Gateway</a></li>
+          <li><a href="c05s01.html">Amazon Simple Storage Service (S3)</a></li>
+        </ul>        
+      </div>
+    </aside>
+    <section class="servicesSection">
+      <div>
+        <h3>AWS Transit Gateway</h3>
+        <p class="bookStyle">AWS Transit Gateway (TGW) is a highly scalable, regional routing service that acts as a centralized hub to interconnect thousands of Virtual Private Clouds (VPCs) and on-premises networks. By functioning as a cloud-native router at Layer 3, it effectively eliminates the complexity of managing large-scale, point-to-point VPC peering meshes, which become operationally prohibitive as infrastructure grows. Instead of maintaining <code>N(N-1)/2</code> peering relationships, architects can implement a hub-and-spoke topology where each VPC or VPN connection requires only a single attachment to the Transit Gateway, significantly streamlining routing table management and network visibility.</p>
+        <p class="bookStyle">Technically, Transit Gateway utilizes a system of attachments and route tables to control traffic flow between spokes. When a packet enters the gateway from an attachment, it is evaluated against a specific Transit Gateway route table to determine its next-hop destination. This architecture supports advanced networking patterns, such as transitive routing, which is not possible with standard VPC peering. Furthermore, it allows for sophisticated network segmentation by associating different attachments with separate route tables—similar to Virtual Routing and Forwarding (VRF) instances in traditional on-premises hardware. This enables engineers to isolate environments (e.g., Development vs. Production) or redirect traffic through a centralized inspection VPC containing firewalls or intrusion detection systems.</p>
+        <p class="bookStyle">For hybrid cloud connectivity, Transit Gateway integrates seamlessly with AWS Direct Connect and Site-to-Site VPN, supporting Equal-Cost Multi-Path (ECMP) routing to aggregate bandwidth across multiple tunnels for increased throughput. It also supports inter-Region peering, allowing data to traverse the AWS global backbone with built-in encryption and reduced exposure to the public internet. By consolidating management into a single resource, AWS Transit Gateway reduces the "undifferentiated heavy lifting" of network administration, providing a robust, elastic, and secure foundation for globally distributed architectures.</p>
+      </div>
+    </section>
   </main>
   <footer>
     <p><small>2026 &copy; Service Catalog - Florida International University</small></p>

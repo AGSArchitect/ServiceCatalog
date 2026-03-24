@@ -19,18 +19,34 @@
   <header>
     <p>| <a href="../index.html">Home</a> | <a href="../services/index.html">Services</a> | <a href="../documents/index.html">Documents</a> | <a href="../contact/index.html">Contact</a> | <a href="../help/index.html">Help</a> | <a href="../about/index.html">About</a> |</p>
   </header>
-  <main>
-    <h1>Services</h1>
-    <h3>Amazon Elastic Container Service (ECS)</h3>
-    <div>
-      <p class="bookStyle">Amazon Elastic Container Service (ECS) is a highly scalable, fully managed container orchestration service designed to simplify the deployment, management, and scaling of Docker-based applications. As a native AWS solution, ECS integrates deeply with the broader ecosystem, providing a streamlined alternative to complex orchestration platforms like Kubernetes. At its core, ECS architecture revolves around clusters, which are logical groupings of compute resources that run your applications. Users define their workloads through Task Definitions, JSON-formatted blueprints that specify parameters such as the Docker image to use, CPU and memory allocations, networking modes, and IAM roles for granular security.</p>
-      <p class="bookStyle">A key technical differentiator of ECS is its support for two primary launch types: AWS Fargate and Amazon EC2. Fargate offers a serverless experience, allowing developers to run containers without managing the underlying virtual machines, whereas the EC2 launch type provides direct control over the instance types and cluster configuration. For service-level management, ECS uses a Service scheduler to maintain the desired number of running tasks, handling health checks and automatic replacement of failed containers to ensure high availability.</p>
-      <div class="centerAligned">
-        <img src="../images/c01s02-01.png">
-        <p><strong><small>Figure 1:</small></strong> Connectivity over AWS PrivateLink.</p>
+  <main class="servicesMain">
+    <aside class="servicesAside">
+      <div>
+        <h1>Services</h1>
+        <ul class="servicesMenu">
+          <li><a href="c01s01.html">Amazon Elastic Compute Cloud (EC2)</a></li>
+          <li><a href="c01s02.html">Amazon Elastic Container Service (ECS)</a></li>
+          <li><a href="c01s03.html">AWS Lambda</a></li>
+          <li><a href="c02s01.html">Amazon Aurora</a></li>
+          <li><a href="c02s02.html">Amazon ElastiCache</a></li>
+          <li><a href="c03s01.html">AWS Application Load Balancer (ALB)</a></li>
+          <li><a href="c04s01.html">AWS Transit Gateway</a></li>
+          <li><a href="c05s01.html">Amazon Simple Storage Service (S3)</a></li>
+        </ul>        
       </div>
-      <p class="bookStyle">ECS further extends its utility through Amazon ECS Anywhere, which enables consistent orchestration for on-premises workloads using the same managed control plane. The service also features advanced networking capabilities through Elastic Load Balancing (ELB) and service discovery, allowing microservices to communicate efficiently within a Virtual Private Cloud (VPC). By automating the heavy lifting of infrastructure management and scaling, ECS allows engineering teams to focus strictly on building and optimizing containerized code while maintaining rigorous security standards through native AWS Identity and Access Management (IAM) integration.</p>
-    </div>
+    </aside>
+    <section class="servicesSection">
+      <div>
+        <h3>Amazon Elastic Container Service (ECS)</h3>
+        <p class="bookStyle">Amazon Elastic Container Service (ECS) is a highly scalable, fully managed container orchestration service designed to simplify the deployment, management, and scaling of Docker-based applications. As a native AWS solution, ECS integrates deeply with the broader ecosystem, providing a streamlined alternative to complex orchestration platforms like Kubernetes. At its core, ECS architecture revolves around clusters, which are logical groupings of compute resources that run your applications. Users define their workloads through Task Definitions, JSON-formatted blueprints that specify parameters such as the Docker image to use, CPU and memory allocations, networking modes, and IAM roles for granular security.</p>
+        <p class="bookStyle">A key technical differentiator of ECS is its support for two primary launch types: AWS Fargate and Amazon EC2. Fargate offers a serverless experience, allowing developers to run containers without managing the underlying virtual machines, whereas the EC2 launch type provides direct control over the instance types and cluster configuration. For service-level management, ECS uses a Service scheduler to maintain the desired number of running tasks, handling health checks and automatic replacement of failed containers to ensure high availability.</p>
+        <div class="centerAligned">
+          <img src="../images/c01s02-01.png">
+          <p><strong><small>Figure 1:</small></strong> Connectivity over AWS PrivateLink.</p>
+        </div>
+        <p class="bookStyle">ECS further extends its utility through Amazon ECS Anywhere, which enables consistent orchestration for on-premises workloads using the same managed control plane. The service also features advanced networking capabilities through Elastic Load Balancing (ELB) and service discovery, allowing microservices to communicate efficiently within a Virtual Private Cloud (VPC). By automating the heavy lifting of infrastructure management and scaling, ECS allows engineering teams to focus strictly on building and optimizing containerized code while maintaining rigorous security standards through native AWS Identity and Access Management (IAM) integration.</p>
+      </div>
+    </section>
   </main>
   <footer>
     <p><small>2026 &copy; Service Catalog - Florida International University</small></p>

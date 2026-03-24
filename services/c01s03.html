@@ -19,14 +19,30 @@
   <header>
     <p>| <a href="../index.html">Home</a> | <a href="../services/index.html">Services</a> | <a href="../documents/index.html">Documents</a> | <a href="../contact/index.html">Contact</a> | <a href="../help/index.html">Help</a> | <a href="../about/index.html">About</a> |</p>
   </header>
-  <main>
-    <h1>Services</h1>
-    <h3>AWS Lambda</h3>
-    <div>
-      <p class="bookStyle">AWS Lambda is a serverless, event-driven compute service that enables developers to run code without provisioning or managing underlying server infrastructure. As a cornerstone of Function-as-a-Service (FaaS), it allows for the execution of discrete units of logic, known as functions, in response to specific triggers from over 200 AWS services and SaaS applications. Technically, Lambda operates by packaging code into an isolated, high-performance containerized execution environment. When an event occurs—such as a file upload to Amazon S3, a new record in DynamoDB, or an HTTP request via API Gateway—Lambda automatically allocates the necessary CPU, memory, and networking resources to process the request.</p>
-      <p class="bookStyle">The service supports a wide range of native runtimes, including Python, Node.js, Java, and Go, while also allowing for custom runtimes or container images for complex dependencies. A key technical advantage is its automatic scaling; Lambda can scale from zero to thousands of concurrent executions in seconds to meet fluctuating demand, and users are billed strictly for the compute time consumed in millisecond increments. To optimize performance, developers can leverage Provisioned Concurrency to eliminate "cold starts" for latency-sensitive applications.</p>
-      <p class="bookStyle">Security and governance are integrated through AWS Identity and Access Management (IAM), which grants functions granular permissions to interact with other resources using least-privilege execution roles. Furthermore, AWS Lambda handles all infrastructure maintenance, including OS patching, capacity provisioning, and health monitoring via Amazon CloudWatch. By abstracting the operational layer, Lambda empowers engineering teams to focus exclusively on application logic and rapid iteration, making it an ideal choice for microservices, real-time data processing, and automated system maintenance.</p>
-    </div>
+  <main class="servicesMain">
+    <aside class="servicesAside">
+      <div>
+        <h1>Services</h1>
+        <ul class="servicesMenu">
+          <li><a href="c01s01.html">Amazon Elastic Compute Cloud (EC2)</a></li>
+          <li><a href="c01s02.html">Amazon Elastic Container Service (ECS)</a></li>
+          <li><a href="c01s03.html">AWS Lambda</a></li>
+          <li><a href="c02s01.html">Amazon Aurora</a></li>
+          <li><a href="c02s02.html">Amazon ElastiCache</a></li>
+          <li><a href="c03s01.html">AWS Application Load Balancer (ALB)</a></li>
+          <li><a href="c04s01.html">AWS Transit Gateway</a></li>
+          <li><a href="c05s01.html">Amazon Simple Storage Service (S3)</a></li>
+        </ul>        
+      </div>
+    </aside>
+    <section class="servicesSection">
+      <div>
+        <h3>AWS Lambda</h3>
+        <p class="bookStyle">AWS Lambda is a serverless, event-driven compute service that enables developers to run code without provisioning or managing underlying server infrastructure. As a cornerstone of Function-as-a-Service (FaaS), it allows for the execution of discrete units of logic, known as functions, in response to specific triggers from over 200 AWS services and SaaS applications. Technically, Lambda operates by packaging code into an isolated, high-performance containerized execution environment. When an event occurs—such as a file upload to Amazon S3, a new record in DynamoDB, or an HTTP request via API Gateway—Lambda automatically allocates the necessary CPU, memory, and networking resources to process the request.</p>
+        <p class="bookStyle">The service supports a wide range of native runtimes, including Python, Node.js, Java, and Go, while also allowing for custom runtimes or container images for complex dependencies. A key technical advantage is its automatic scaling; Lambda can scale from zero to thousands of concurrent executions in seconds to meet fluctuating demand, and users are billed strictly for the compute time consumed in millisecond increments. To optimize performance, developers can leverage Provisioned Concurrency to eliminate "cold starts" for latency-sensitive applications.</p>
+        <p class="bookStyle">Security and governance are integrated through AWS Identity and Access Management (IAM), which grants functions granular permissions to interact with other resources using least-privilege execution roles. Furthermore, AWS Lambda handles all infrastructure maintenance, including OS patching, capacity provisioning, and health monitoring via Amazon CloudWatch. By abstracting the operational layer, Lambda empowers engineering teams to focus exclusively on application logic and rapid iteration, making it an ideal choice for microservices, real-time data processing, and automated system maintenance.</p>
+      </div>
+    </section>
   </main>
   <footer>
     <p><small>2026 &copy; Service Catalog - Florida International University</small></p>

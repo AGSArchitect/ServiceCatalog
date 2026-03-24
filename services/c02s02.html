@@ -19,18 +19,34 @@
   <header>
     <p>| <a href="../index.html">Home</a> | <a href="../services/index.html">Services</a> | <a href="../documents/index.html">Documents</a> | <a href="../contact/index.html">Contact</a> | <a href="../help/index.html">Help</a> | <a href="../about/index.html">About</a> |</p>
   </header>
-  <main>
-    <h1>Services</h1>
-    <h3>Amazon ElastiCache</h3>
-    <div>
-      <p class="bookStyle">Amazon ElastiCache is a fully managed, in-memory data store and caching service provided by Amazon Web Services (AWS) that is architected to deliver sub-millisecond latency for high-throughput, real-time applications. By decoupling the high-speed data access layer from traditional disk-based databases, ElastiCache allows developers to significantly reduce I/O overhead and minimize the load on primary data sources like Amazon RDS or Aurora. The service is fully compatible with popular open-source engines, including Redis OSS, Memcached, and the more recent Valkey, enabling seamless migration with minimal to no code changes.</p>
-      <div class="centerAligned">
-        <img src="../images/c02s02-01.png">
-        <p><strong><small>Figure 1:</small></strong> Amazon ElastiCache example architecture.</p>
+  <main class="servicesMain">
+    <aside class="servicesAside">
+      <div>
+        <h1>Services</h1>
+        <ul class="servicesMenu">
+          <li><a href="c01s01.html">Amazon Elastic Compute Cloud (EC2)</a></li>
+          <li><a href="c01s02.html">Amazon Elastic Container Service (ECS)</a></li>
+          <li><a href="c01s03.html">AWS Lambda</a></li>
+          <li><a href="c02s01.html">Amazon Aurora</a></li>
+          <li><a href="c02s02.html">Amazon ElastiCache</a></li>
+          <li><a href="c03s01.html">AWS Application Load Balancer (ALB)</a></li>
+          <li><a href="c04s01.html">AWS Transit Gateway</a></li>
+          <li><a href="c05s01.html">Amazon Simple Storage Service (S3)</a></li>
+        </ul>        
       </div>
-      <p class="bookStyle">Technically, ElastiCache operates as a distributed system that can be deployed in two primary configurations: node-based clusters or a serverless model. In a node-based setup, users have granular control over instance types and sharding, with support for up to 250 shards and 170.6 TB of in-memory data in cluster mode. For high availability, ElastiCache for Redis supports Multi-AZ deployments with automatic failover, where it maintains a primary node and up to five read replicas across multiple Availability Zones to ensure 99.99% availability. The serverless option further abstracts infrastructure management by automatically scaling compute and memory resources in response to application demand, eliminating the need for manual capacity planning.</p>
-      <p class="bookStyle">Beyond simple key-value caching, ElastiCache supports complex data structures—such as sorted sets, bitmaps, and hyperloglogs—making it an ideal choice for specialized use cases like real-time leaderboards, session management, geospatial indexing, and pub/sub messaging. Advanced features like Global Datastore facilitate fully managed cross-region replication, allowing for local, low-latency reads in globally distributed architectures. By automating administrative tasks such as software patching, failure recovery, and backups, ElastiCache enables engineering teams to focus on optimizing application logic while maintaining an enterprise-grade, secure (VPC-isolated and IAM-authenticated) caching environment.</p>
-    </div>
+    </aside>
+    <section class="servicesSection">
+      <div>
+        <h3>Amazon ElastiCache</h3>
+        <p class="bookStyle">Amazon ElastiCache is a fully managed, in-memory data store and caching service provided by Amazon Web Services (AWS) that is architected to deliver sub-millisecond latency for high-throughput, real-time applications. By decoupling the high-speed data access layer from traditional disk-based databases, ElastiCache allows developers to significantly reduce I/O overhead and minimize the load on primary data sources like Amazon RDS or Aurora. The service is fully compatible with popular open-source engines, including Redis OSS, Memcached, and the more recent Valkey, enabling seamless migration with minimal to no code changes.</p>
+        <div class="centerAligned">
+          <img src="../images/c02s02-01.png">
+          <p><strong><small>Figure 1:</small></strong> Amazon ElastiCache example architecture.</p>
+        </div>
+        <p class="bookStyle">Technically, ElastiCache operates as a distributed system that can be deployed in two primary configurations: node-based clusters or a serverless model. In a node-based setup, users have granular control over instance types and sharding, with support for up to 250 shards and 170.6 TB of in-memory data in cluster mode. For high availability, ElastiCache for Redis supports Multi-AZ deployments with automatic failover, where it maintains a primary node and up to five read replicas across multiple Availability Zones to ensure 99.99% availability. The serverless option further abstracts infrastructure management by automatically scaling compute and memory resources in response to application demand, eliminating the need for manual capacity planning.</p>
+        <p class="bookStyle">Beyond simple key-value caching, ElastiCache supports complex data structures—such as sorted sets, bitmaps, and hyperloglogs—making it an ideal choice for specialized use cases like real-time leaderboards, session management, geospatial indexing, and pub/sub messaging. Advanced features like Global Datastore facilitate fully managed cross-region replication, allowing for local, low-latency reads in globally distributed architectures. By automating administrative tasks such as software patching, failure recovery, and backups, ElastiCache enables engineering teams to focus on optimizing application logic while maintaining an enterprise-grade, secure (VPC-isolated and IAM-authenticated) caching environment.</p>
+      </div>
+    </section>
   </main>
   <footer>
     <p><small>2026 &copy; Service Catalog - Florida International University</small></p>

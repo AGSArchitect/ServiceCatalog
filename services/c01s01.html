@@ -19,18 +19,34 @@
   <header>
     <p>| <a href="../index.html">Home</a> | <a href="../services/index.html">Services</a> | <a href="../documents/index.html">Documents</a> | <a href="../contact/index.html">Contact</a> | <a href="../help/index.html">Help</a> | <a href="../about/index.html">About</a> |</p>
   </header>
-  <main>
-    <h1>Services</h1>
-    <h3>Amazon Elastic Compute Cloud (EC2)</h3>
-    <div>
-      <p class="bookStyle">Amazon Elastic Compute Cloud (EC2) provides a resizable, high-performance virtual computing environment that serves as the backbone for diverse cloud-native and enterprise applications. Beyond basic virtualization, its technical architecture is defined by the AWS Nitro System, which offloads critical networking and storage functions to dedicated hardware to provide nearly 100% of the host's resources to the guest instance. This isolation is further bolstered by Amazon Machine Images (AMIs)—pre-configured templates that define the operating system and software stack—and Elastic Block Store (EBS), which provides persistent, high-performance block-level storage volumes for data that must outlive the instance itself.</p>
-      <p class="bookStyle">To ensure high availability and resilience, EC2 instances are deployed within a global infrastructure of AWS Regions and Availability Zones. This allows architects to build multi-tier systems where traffic is distributed via Elastic Load Balancing (ELB) across multiple instances in physically separate data centers, protecting against hardware failures. Security is managed through a layered approach: Security Groups act as stateful virtual firewalls for individual instances, while Network Access Control Lists (ACLs) provide stateless filtering at the subnet level within an Amazon Virtual Private Cloud (VPC).</p>
-      <div class="centerAligned">
-        <img src="../images/c01s01-01.png">
-        <p><strong><small>Figure 1:</small></strong> Overview of AMI creation.</p>
+  <main class="servicesMain">
+    <aside class="servicesAside">
+      <div>
+        <h1>Services</h1>
+        <ul class="servicesMenu">
+          <li><a href="c01s01.html">Amazon Elastic Compute Cloud (EC2)</a></li>
+          <li><a href="c01s02.html">Amazon Elastic Container Service (ECS)</a></li>
+          <li><a href="c01s03.html">AWS Lambda</a></li>
+          <li><a href="c02s01.html">Amazon Aurora</a></li>
+          <li><a href="c02s02.html">Amazon ElastiCache</a></li>
+          <li><a href="c03s01.html">AWS Application Load Balancer (ALB)</a></li>
+          <li><a href="c04s01.html">AWS Transit Gateway</a></li>
+          <li><a href="c05s01.html">Amazon Simple Storage Service (S3)</a></li>
+        </ul>        
       </div>
-      <p class="bookStyle">The platform's versatility is evident in its specialized instance families, which now include EC2 Mac Instances for macOS workloads and HPC-optimized instances capable of 400 Gbps networking for complex scientific simulations. Advanced features like Hibernation allow instances to save their RAM state to EBS, enabling rapid resumption of complex workloads without a full system reboot. Combined with Amazon EC2 Auto Scaling, which uses predictive algorithms to adjust capacity before traffic spikes occur, EC2 provides a robust, self-healing infrastructure that aligns costs directly with real-time operational needs.</p>
-    </div>
+    </aside>
+    <section class="servicesSection">
+      <div>
+        <h3>Amazon Elastic Compute Cloud (EC2)</h3>
+        <p class="bookStyle">Amazon Elastic Compute Cloud (EC2) provides a resizable, high-performance virtual computing environment that serves as the backbone for diverse cloud-native and enterprise applications. Beyond basic virtualization, its technical architecture is defined by the AWS Nitro System, which offloads critical networking and storage functions to dedicated hardware to provide nearly 100% of the host's resources to the guest instance. This isolation is further bolstered by Amazon Machine Images (AMIs)—pre-configured templates that define the operating system and software stack—and Elastic Block Store (EBS), which provides persistent, high-performance block-level storage volumes for data that must outlive the instance itself.</p>
+        <p class="bookStyle">To ensure high availability and resilience, EC2 instances are deployed within a global infrastructure of AWS Regions and Availability Zones. This allows architects to build multi-tier systems where traffic is distributed via Elastic Load Balancing (ELB) across multiple instances in physically separate data centers, protecting against hardware failures. Security is managed through a layered approach: Security Groups act as stateful virtual firewalls for individual instances, while Network Access Control Lists (ACLs) provide stateless filtering at the subnet level within an Amazon Virtual Private Cloud (VPC).</p>
+        <div class="centerAligned">
+          <img src="../images/c01s01-01.png">
+          <p><strong><small>Figure 1:</small></strong> Overview of AMI creation.</p>
+        </div>
+        <p class="bookStyle">The platform's versatility is evident in its specialized instance families, which now include EC2 Mac Instances for macOS workloads and HPC-optimized instances capable of 400 Gbps networking for complex scientific simulations. Advanced features like Hibernation allow instances to save their RAM state to EBS, enabling rapid resumption of complex workloads without a full system reboot. Combined with Amazon EC2 Auto Scaling, which uses predictive algorithms to adjust capacity before traffic spikes occur, EC2 provides a robust, self-healing infrastructure that aligns costs directly with real-time operational needs.</p>
+      </div>
+    </section>
   </main>
   <footer>
     <p><small>2026 &copy; Service Catalog - Florida International University</small></p>
