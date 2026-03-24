@@ -17,13 +17,18 @@
 
 <body>
   <header>
-    <p>| Home | Services | Documents | Contact | Help | About |</p>
+    <p>| <a href="../index.html">Home</a> | <a href="../services/index.html">Services</a> | <a href="../documents/index.html">Documents</a> | <a href="../contact/index.html">Contact</a> | <a href="../help/index.html">Help</a> | <a href="../about/index.html">About</a> |</p>
   </header>
   <main>
     <h1>Services</h1>
     <h3>Amazon Aurora</h3>
     <div>
-      <p class="bookStyle">xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx.</p>
+      <p class="bookStyle">Amazon Aurora is a cloud-native, PostgreSQL- and MySQL-compatible relational database engine designed to decouple compute from storage, effectively addressing the traditional monolithic constraints of relational databases. By offloading the logging and caching layers to a purpose-built, multi-tenant scale-out storage service, Aurora significantly reduces network I/O and overhead. This specialized storage architecture is self-healing and fault-tolerant, automatically replicating data six ways across three Availability Zones (AZs) to ensure 99.99% availability and high durability. Unlike standard RDS instances that rely on EBS volumes, Aurora utilizes a distributed, log-structured storage system that scales automatically up to 128 TiB (for MySQL) or 256 TiB (for PostgreSQL), eliminating the need for manual storage provisioning.</p>
+      <div class="centerAligned">
+        <img src="../images/c02s01-01.png">
+        <p><strong><small>Figure 1:</small></strong> Amazon RDS application architecture.</p>
+      </div>
+      <p class="bookStyle">For high-throughput workloads, Aurora delivers up to five times the throughput of standard MySQL and three times that of standard PostgreSQL. It supports up to 15 low-latency read replicas that share the same underlying storage as the primary instance, which minimizes replica lag to single-digit milliseconds and allows for near-instantaneous failover. Advanced features such as Aurora Global Database enable sub-second cross-region replication for globally distributed applications, providing both disaster recovery and low-latency local reads. Additionally, Aurora Serverless v2 offers fine-grained, instantaneous scaling to handle volatile traffic patterns without the operational burden of managing instance sizes. By automating undifferentiated heavy lifting—such as patching, backups, and point-in-time recovery—Aurora allows engineering teams to focus on schema design and query optimization while maintaining the performance and reliability of enterprise-grade commercial databases at a fraction of the cost.</p>
     </div>
   </main>
   <footer>

@@ -17,13 +17,15 @@
 
 <body>
   <header>
-    <p>| Home | Services | Documents | Contact | Help | About |</p>
+    <p>| <a href="../index.html">Home</a> | <a href="../services/index.html">Services</a> | <a href="../documents/index.html">Documents</a> | <a href="../contact/index.html">Contact</a> | <a href="../help/index.html">Help</a> | <a href="../about/index.html">About</a> |</p>
   </header>
   <main>
     <h1>Services</h1>
     <h3>AWS Application Load Balancer (ALB)</h3>
     <div>
-      <p class="bookStyle">xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx.</p>
+      <p class="bookStyle">AWS Application Load Balancer (ALB) is a fully managed Layer 7 load balancing service designed to intelligently distribute incoming HTTP and HTTPS traffic across multiple targets—such as EC2 instances, containers, and IP addresses—within one or more Availability Zones. Unlike traditional load balancers that operate at the transport layer, ALB is "application-aware," meaning it can inspect the content of individual requests to make routing decisions based on attributes like URL paths, hostnames, HTTP headers, or query strings. This granular control makes it the ideal choice for modern architectures, including microservices and containerized applications.</p>
+      <p class="bookStyle">Architecturally, ALB consists of three main components: listeners, rules, and target groups. A listener continuously checks for connection requests based on a configured protocol and port. When a request is received, the listener evaluates it against a set of prioritized rules to determine the appropriate target group for forwarding. ALB supports advanced features like host-based and path-based routing, which allows a single load balancer to manage traffic for multiple domains or different sub-services of an application, significantly reducing infrastructure complexity and cost.</p>
+      <p class="bookStyle">Beyond basic traffic distribution, ALB provides robust security and performance features. It integrates seamlessly with AWS Web Application Firewall (WAF) to protect against common web exploits and offloads SSL/TLS termination to improve backend server performance. It also natively supports modern protocols like HTTP/2 and WebSockets, enabling low-latency, bidirectional communication for real-time applications. With built-in health checks that automatically reroute traffic away from failing targets and native integration with Auto Scaling groups, ALB ensures that your application remains highly available and responsive even as demand fluctuates.</p>
     </div>
   </main>
   <footer>

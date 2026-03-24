@@ -20,6 +20,12 @@ h3 {
     color: #B6862C;
 }
 
+code {
+    color: #FF0000;
+    font-family: monospace;
+    font-style: italic;
+}
+
 .section {
     color: #416CBD;
 }
@@ -31,6 +37,28 @@ h3 {
 
 .rightAligned {
     text-align: right;
+}
+
+.centerAligned {
+    text-align: center;
+}
+
+.tableFormat {
+    border-spacing: 15px 5px;
+    padding-top: 15px;
+}
+
+.audioBlock {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.codeBlock {
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    font-family: monospace;
+    padding: 25px;
 }
 
 footer {
