@@ -67,6 +67,30 @@ footer {
     color: #BBBBBB;
 }
 
+/* [ Service Pages */
+
+.servicesMain {
+    display: flex;
+}
+
+.servicesAside {
+    flex-basis: 35%;
+}
+
+.servicesSection {
+    flex-basis: 65%;
+    padding-top: 15px;
+}
+
+.servicesMenu {
+    font-size: smaller;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* [ Contact Form ] */
+
 label {
     display: block;
     margin-bottom: .25em;
